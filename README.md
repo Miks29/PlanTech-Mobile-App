@@ -1,2 +1,2 @@
 # PlanTech
-plantech android app. remote repository
+Smart Plant Pot Android application remote repository
