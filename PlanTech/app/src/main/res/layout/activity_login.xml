@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.plantech.myapplication.LoginActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="140dp"
+        android:layout_height="253dp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <GridView
+        android:layout_width="409dp"
+        android:layout_height="252dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <ListView
+        android:layout_width="219dp"
+        android:layout_height="403dp"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="327dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
