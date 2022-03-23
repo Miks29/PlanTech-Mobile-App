@@ -31,6 +31,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
         android:hint="Username"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -47,6 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
         android:hint="Password"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -98,7 +102,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't Have an Account? "
+            android:text="Don't have an account? "
             android:textColor="@color/black"/>
 
         <TextView
