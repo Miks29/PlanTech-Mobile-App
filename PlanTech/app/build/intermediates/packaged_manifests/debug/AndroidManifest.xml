@@ -23,6 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name="com.plantech.myapplication.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.plantech.myapplication.LogInActivity"
+            android:exported="false" />
+        <activity
             android:name="com.plantech.myapplication.MainActivity"
             android:exported="true" >
             <intent-filter>

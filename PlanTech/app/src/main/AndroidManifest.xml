@@ -13,7 +13,6 @@
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".SIgnUpActivity"
             android:name=".LogInActivity"
             android:exported="false" />
         <activity
