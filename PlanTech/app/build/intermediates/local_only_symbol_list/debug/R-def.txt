@@ -21,7 +21,7 @@ drawable input_bg
 id SignUpActivity
 id alreadyHaveAnAccount
 id btnLogIn
-id button
+id buttonSignUp
 id inputConfirmPass
 id inputEmail
 id inputPass
