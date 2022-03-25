@@ -14,9 +14,11 @@
             android:exported="false" />
         <activity
             android:name=".LogInActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
