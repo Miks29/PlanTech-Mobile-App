@@ -5,8 +5,8 @@
     android:id="@+id/SignUpActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
-    android:background="@drawable/bg_signup">
+    android:background="@drawable/bg_signup"
+    tools:context=".SignUpActivity">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txtPass"
@@ -41,6 +41,8 @@
         android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
         android:drawablePadding="10dp"
         android:hint="Confirm Password"
+        android:inputType="textPassword"
+  
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -49,6 +51,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPass" />
+  
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintStart_toStartOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        app:passwordToggleEnabled="true" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txtUser"
@@ -60,6 +67,10 @@
         android:drawableLeft="@drawable/ic_person"
         android:drawablePadding="10dp"
         android:hint="Username"
+                                                             
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -68,6 +79,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        app:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/inputConfirmPass"
+        app:layout_constraintStart_toStartOf="@+id/inputConfirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPass" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txtEmail"
@@ -126,8 +150,8 @@
         android:text="Already have an account?"
         android:textColor="@color/green"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
