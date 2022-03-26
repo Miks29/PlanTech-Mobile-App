@@ -3024,6 +3024,7 @@ id triangle
 id txtForgotPassword
 id txtLogIn
 id txtPassword
+id txtSignUp
 id txtUsername
 id unchecked
 id uniform

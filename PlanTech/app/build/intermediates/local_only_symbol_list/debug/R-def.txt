@@ -30,6 +30,7 @@ id textSignUp
 id txtForgotPassword
 id txtLogIn
 id txtPassword
+id txtSignUp
 id txtUsername
 layout activity_log_in
 layout activity_main

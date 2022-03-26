@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\Documents\\GitHub\\PlanTech\\PlanTech\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
