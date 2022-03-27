@@ -1,22 +1,26 @@
 package com.plantech.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.annotation.NonNull;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Toast;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class LogInActivity extends AppCompatActivity {
 
-    TextView txtUsername;
-    TextView txtLogIn;
-    Button btnLogIn;
+    private FirebaseAuth auth;
+    private TextView txtUsername;
+    private TextView txtPassword;
     TextView txtSignUp;
-    TextView txtPassword;
+    Button btnLogIn;
 
 
     @Override
@@ -25,67 +29,21 @@ public class LogInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
 
 
-                txtLogIn = findViewById(R.id.txtLogIn);
+                auth = FirebaseAuth.getInstance();
                 btnLogIn = findViewById(R.id.btnLogIn);
                 txtUsername = findViewById(R.id.txtUsername);
+                txtPassword = findViewById(R.id.txtPassword);
                 txtSignUp = findViewById(R.id.txtSignUp);
 
-            public void checkUsername; {
-            boolean isValid = true;
-            if (isEmpty(txtUsername)) {
-                txtUsername.setError("You must enter username to login!");
-                isValid = false;
-            } else {
-                if (!isEmail(txtUsername)) {
-                    txtUsername.setError("Enter valid email!");
-                    isValid = false;
-                }
-            }
 
-            if (isEmpty(txtPassword)) {
-                txtPassword.setError("You must enter password to login!");
-                isValid = false;
-            } else {
-                if (txtPassword.getText().toString().length() < 4) {
-                    txtPassword.setError("Password must be at least 4 chars long!");
-                    isValid = false;
-                }
-            }
-
-            //check email and password
-            //IMPORTANT: here should be call to backend or safer function for local check; For example simple check is cool
-            //For example simple check is cool
-            if (isValid) {
-                String usernameValue = txtUsername.getText().toString();
-                String passwordValue = txtPassword.getText().toString();
-                if (usernameValue.equals("test@test.com") && passwordValue.equals("password1234")) {
-                    //everything checked we open new activity
-                    Intent i = new Intent(LogInActivity.this, SignUpActivity.class);
-                    startActivity(i);
-                    //we close this activity
-                    this.finish();
-                } else {
-                    Toast t = Toast.makeText(this, "Wrong email or password!", Toast.LENGTH_SHORT);
-                    t.show();
-                }
-            }
-        }
-                txtLogIn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent (LogInActivity.this, SignUpActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
                 btnLogIn.setOnClickListener(new View.OnClickListener() {
                      @Override
                      public void onClick(View view) {
-                         Intent intent = new Intent (LogInActivity.this, SignUpActivity.class);
-                         startActivity(intent);
-                         finish();
+
+                         login();
                     }
                 });
+
                 txtSignUp.setOnClickListener(new View.OnClickListener() {
                      @Override
                      public void onClick(View view) {
@@ -95,8 +53,29 @@ public class LogInActivity extends AppCompatActivity {
                     }
                 });
             }
+
+    private void login() {
+
+        String user = txtUsername.getText().toString().trim();
+        String pass = txtPassword.getText().toString().trim();
+        if (user.isEmpty()){
+            txtUsername.setError("Email cannot be empty");}
+        if (pass.isEmpty()){
+            txtPassword.setError("Password cannot be empty");}
+        else{
+            auth.signInWithEmailAndPassword(user,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()){
+
+                        Toast.makeText(LogInActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LogInActivity.this , MainActivity.class));}
+                    else{
+                        Toast.makeText(LogInActivity.this, "Login Failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();}
+                        }
+            });
         }
-
-
+    }
+}
 
 
