@@ -50,23 +50,34 @@ the water pump
 - From the dashboard screen, the menu options can also be seen (right image), where other features of the android application can be accessible.
 
 ## Profile
-
+The figure below shows the account profile of the user.
 <p align="center">
    <img src="https://github.com/Miks29/PlanTech-Mobile-App/blob/c507151533ee220c7c80a120c88f891fe2220437/PlanTech_Design/profile.png" align=top width=20% height=25%>
 </p>
 
+- The profile screen interface shows the email used by the user to access the application
+- It also shows an option for users to enable / disable push notifications about specific environmental factors and status of the device from the application
+- The notification should only work when the switch is ON (activated) and should not show any
+notification when the switch is OFF (deactivated).
 ## Control Settings
+The below figure shows the control settings where the user can choose from automated or manual configuration in using PlanTech directly from the Mobile Application
 <p align="center">
    <img src="https://github.com/Miks29/PlanTech-Mobile-App/blob/c507151533ee220c7c80a120c88f891fe2220437/PlanTech_Design/control_settings.png" align=top width=20% height=25%>
 </p>
 
+- Clicking the switch above (next to "Automated") into ON (activated) will set the Plantech configuration into Automatic Mode where Plantech will operate automatically depending on the environmental status the sensors are detecting to operate the devices(water pump, artificial lights, water valve)
+- Clicking the switch into OFF status (deactivated) means the Plantech will operate manually depending on how the user want the devices to operate from the Android Mobile Application.
 ## How to use
+The figure below shows the "How to Use" interface from the dashboard menu. It guides the user on how to setup and connect the android mobile application into Plantech
 <p align="center">
    <img src="https://github.com/Miks29/PlanTech-Mobile-App/blob/c507151533ee220c7c80a120c88f891fe2220437/PlanTech_Design/setup_guide.png" align=top width=20% height=25%>
 </p>
 
+- The interface shows a step-by-step guide for an easy operation on how to use the android mobile application to operate the Plantech Device.
 ## Logout
 <p align="center">
    <img src="https://github.com/Miks29/PlanTech-Mobile-App/blob/c507151533ee220c7c80a120c88f891fe2220437/PlanTech_Design/logout.png" align=top width=20% height=25%>
 </p>
 
+- The user have an option to log out the account and close the application safely.
+- If the user wants to use the mobile application again, the user can just access it by logging in again using the existing account.
