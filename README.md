@@ -68,7 +68,8 @@ The figure below shows the account profile of the user.
 - It also shows an option for users to enable / disable push notifications about specific environmental factors and status of the device from the application
 - The notification should only work when the switch is ON (activated) and should not show any
 notification when the switch is OFF (deactivated).
-[Back to Top](#plantech)
+- [Back to Top](#plantech)
+
 ## Control Settings
 The below figure shows the control settings where the user can choose from automated or manual configuration in using PlanTech directly from the Mobile Application
 <p align="center">
@@ -86,6 +87,7 @@ The figure below shows the "How to Use" interface from the dashboard menu. It gu
 
 - The interface shows a step-by-step guide for an easy operation on how to use the android mobile application to operate the Plantech Device.
 - [Back to Top](#plantech)
+
 ## Logout
 <p align="center">
    <img src="https://github.com/Miks29/PlanTech-Mobile-App/blob/c507151533ee220c7c80a120c88f891fe2220437/PlanTech_Design/logout.png" align=top width=20% height=25%>
@@ -94,6 +96,7 @@ The figure below shows the "How to Use" interface from the dashboard menu. It gu
 - The user have an option to log out the account and close the application safely.
 - If the user wants to use the mobile application again, the user can just access it by logging in again using the existing account.
 - [Back to Top](#plantech)
+
 <a name="contributors"></a>
 ## PlanTech : AN IOT-BASED SMART POT FOR PECHAY WITH ANDROID APP FOR MONITORING ENVIRONMENTAL FACTORS
 By: 
