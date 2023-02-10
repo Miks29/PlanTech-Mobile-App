@@ -38,7 +38,8 @@ The figure below shows the login screen(left) and the sign up screen(right)
 - If the user don't have an existing account yet, the user can click the "Sign Up" button to create an account. 
 - For security purposes, the user needs to verify the email provided where the user will receive an email to verify and use the application successfully afterwards.
 - If the user forgot the password of an existing account, the user can click the "Forgot Password" button and enter the related email. An email will be sent to the email provided from the forgot password screen. The user can then reset or change the password.
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
 
 ## Dashboard
 The figure below shows the most important feature of the android application, the
@@ -56,7 +57,8 @@ the water pump
 - The water tank level needs to be 29% to activate the tank valve
 - And brightness level should be dark to turn the LED on.
 - From the dashboard screen, the menu options can also be seen (right image), where other features of the android application can be accessible.
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
 
 ## Profile
 The figure below shows the account profile of the user.
@@ -68,7 +70,8 @@ The figure below shows the account profile of the user.
 - It also shows an option for users to enable / disable push notifications about specific environmental factors and status of the device from the application
 - The notification should only work when the switch is ON (activated) and should not show any
 notification when the switch is OFF (deactivated).
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
 
 ## Control Settings
 The below figure shows the control settings where the user can choose from automated or manual configuration in using PlanTech directly from the Mobile Application
@@ -78,7 +81,9 @@ The below figure shows the control settings where the user can choose from autom
 
 - Clicking the switch above (next to "Automated") into ON (activated) will set the Plantech configuration into Automatic Mode where Plantech will operate automatically depending on the environmental status the sensors are detecting to operate the devices(water pump, artificial lights, water valve)
 - Clicking the switch into OFF status (deactivated) means the Plantech will operate manually depending on how the user want the devices to operate from the Android Mobile Application.
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
+
 ## How to use
 The figure below shows the "How to Use" interface from the dashboard menu. It guides the user on how to setup and connect the android mobile application into Plantech
 <p align="center">
@@ -86,7 +91,8 @@ The figure below shows the "How to Use" interface from the dashboard menu. It gu
 </p>
 
 - The interface shows a step-by-step guide for an easy operation on how to use the android mobile application to operate the Plantech Device.
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
 
 ## Logout
 <p align="center">
@@ -95,7 +101,8 @@ The figure below shows the "How to Use" interface from the dashboard menu. It gu
 
 - The user have an option to log out the account and close the application safely.
 - If the user wants to use the mobile application again, the user can just access it by logging in again using the existing account.
-- [Back to Top](#plantech)
+
+[Back to Top](#plantech)
 
 <a name="contributors"></a>
 ## PlanTech : AN IOT-BASED SMART POT FOR PECHAY WITH ANDROID APP FOR MONITORING ENVIRONMENTAL FACTORS
@@ -110,5 +117,5 @@ May, 2022
 
 **A Capstone Project presented to The Faculty of College of Engineering, Architecture, and Technology Rizal Technological University City of Mandaluyong.**
 
-- [Back to Top](#plantech)
+[Back to Top](#plantech)
 
