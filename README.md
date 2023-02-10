@@ -1,7 +1,7 @@
 # PlanTech
 AN IOT-BASED SMART POT FOR PECHAY WITH ANDROID APP FOR MONITORING ENVIRONMENTAL FACTORS
 
-# Index
+## Links
 - [Contributors](#contributors)
 - [What is it?](#1)
 - [Main Application](#main-application)
@@ -26,6 +26,7 @@ soil moisture, sunlight and water pH level and the actuators connected to the sy
 
 # Main Application
 Below are the different design interface of the Android Mobile Application developed for PlanTech.
+
 ## Login & Sign Up 
 The figure below shows the login screen(left) and the sign up screen(right)
 <p align="center">
