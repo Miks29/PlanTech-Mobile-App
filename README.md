@@ -115,7 +115,9 @@ By:
 
 May, 2022
 
-**A Capstone Project presented to The Faculty of College of Engineering, Architecture, and Technology Rizal Technological University City of Mandaluyong.**
+**A Capstone Project presented to The Faculty of College of Engineering, Architecture, and Technology**
+
+**Rizal Technological University City of Mandaluyong.**
 
 [Back to Top](#plantech)
 
